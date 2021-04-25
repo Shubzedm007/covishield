@@ -1,0 +1,258 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway|Reenie+Beanie);
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#map {
+  background-color: blue;
+}
+
+a {
+  color: black;
+}
+
+.left-bar {
+  height: 820px;
+  width: 26px;
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(0, 229, 182, 1) 0%, rgba(0, 202, 216, 1) 90%);
+  position: fixed;
+  z-index: 5;
+}
+
+.right-bar {
+  background-color: #F4F4F4;
+  height: 820px;
+  width: 490px;
+  position: fixed;
+  z-index: 10;
+  right: 0px;
+  top: 0px;
+}
+
+.right-bar h2 {
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 80px;
+  font-size: 27px;
+  padding-top: 28px;
+}
+
+.image-box {
+  margin-left: 135px;
+}
+
+.image-box img {
+  display: inline-block;
+  border-radius: 40%;
+  width: 30%;
+  margin-left: -5px;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+.buttons .btn-1 {
+  font-family: 'Montserrat', sans-serif;
+  width: 80px;
+  height: 35px;
+  text-align: center;
+  padding: 1px;
+  border-radius: 12px;
+  background-color: white;
+  display: inline-block;
+  color: #00FF57;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+.buttons .btn-2 {
+  font-family: 'Montserrat', sans-serif;
+  width: 85px;
+  height: 35px;
+  text-align: center;
+  border-radius: 12px;
+  background-color: white;
+  display: inline-block;
+  color: #00FF57;
+  margin-left: 210px;
+  cursor: pointer;
+}
+
+.info a {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+  font-size: 12px;
+  margin: 14px 10px;
+}
+
+.bottom-top a {
+  color: black;
+}
+
+.info {
+  width: 430px;
+  height: 450px;
+  background-color: #FAFAFA;
+  margin-left: 30px;
+  margin-top: 40px;
+  border-radius: 12px;
+  transition: 0.1s;
+}
+
+.not {
+  opacity: 0;
+  display: none;
+}
+
+.display {
+  font-family: 'Montserrat', sans-serif;
+  display: inline-block;
+}
+
+.head-1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+.head {
+  margin: 30px 0 20px 9px;
+}
+
+.head-head {
+  margin-bottom: 10px;
+}
+
+.mid-top, .mid-bottom {
+  display: inline-block;
+}
+
+.mid-bottom {
+  margin-left: 50px;
+}
+
+.mid-top {
+  margin-left: 10px;
+}
+
+.mid-top a {
+  color: black;
+  font-size: 1rem;
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.mid-bottom a {
+  color: black;
+  font-size: 1rem;
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.bottom-1 {
+  font-weight: bold;
+}
+
+.grey {
+  color: #C6C3C3;
+}
+
+.ratings {
+  padding: 10px;
+  background-color: white;
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 24px;
+}
+
+.light {
+  color: #73DB7D;
+}
+
+.btn-group {
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.btn-group-1, .btn-group-2 {
+  width: 110px;
+  display: inline-block;
+  background-color: #73DB7D;
+  border-radius: 14px;
+  color: white;
+  height: 40px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn-group-2 {
+  margin-left: 150px;
+}
+
+.bottom hr {
+  width: 40%;
+  height: 3px;
+  background-color: #E9F5F5;
+  margin: 1px solid #E9F5F5;
+}
+
+#content {
+  text-align: center;
+}
+
+.card-1 {
+  top: 120px;
+  left: 160px;
+}
+
+.card-body {
+  width: 350px;
+  height: 280px;
+  background-color: white;
+  transition: 0.8s;
+}
+
+.card-body img {
+  width: 350px;
+  height: 230px;
+  margin-top: -40px;
+}
+
+.card {
+  position: fixed;
+  z-index: 100;
+  font-family: "Reenie Beanie", sans-serif;
+  text-align: center;
+}
+
+.card h1 {
+  margin: 0;
+}
+
+#card-body-pre {
+  position: relative;
+  top: 100px;
+  color: white;
+  margin-right: 50px;
+}
+
+#card-body-next {
+  position: relative;
+  top: 100px;
+  color: white;
+  /* left: 325px; */
+  margin-left: 50px;
+}
+
+#card-main-btn {
+  color: yellow;
+}
+
+.opacity {
+  opacity: 0;
+}

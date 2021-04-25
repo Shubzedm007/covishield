@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+
+
+  <meta charset="utf-8">
+  <title></title>
+  <script src="https://kit.fontawesome.com/fe697e6552.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/index.css">
+
+
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- topbar -->
+  <div class="top-bar">
+    <a href="#"><i class="fab fa-3x fa-canadian-maple-leaf"></i></a>
+    <p>Telemedicine</p>
+    <div class="evaluated">
+      <p>Evaluated data</p>
+
+    </div>
+
+  </div>
+
+  <div class="final-submit">
+    <img src="./images/submit.png" alt="">
+  </div>
+
+  <!--topbar  -->
+
+
+
+
+
+
+
+
+
+
+  <!-- sidebar -->
+
+  <div class="sidebar">
+    <p class="title">.R</p>
+    <a href="#"><i class="fas fa-2x fa-user"></i></a>
+    <p class="p">User</p>
+    <a href="#"><i class="fas fa-2x fa-ambulance"></i></a>
+    <p class="p">Medicine</p>
+    <a href="#"><i class="fas fa-2x fa-archive"></i></a>
+    <p class="p">Archive</p>
+
+    <div class="bottom-icons">
+      <a href="#"><i class="fas fa-2x fa-cog"></i></a>
+      <a href="#"><i class="fas fa-2x fa-sign-out-alt"></i></a>
+    </div>
+
+
+  </div>
+
+
+
+  <!-- side bar -->
+
+  <!-- ============WEBCAM ================-->
+
+  <div class="webcam">
+    <div id="myDiv01"></div><br>
+    <video onplay="onPlay(this)" id="inputVideo" autoplay muted width="640" height="480" style=" border: 1px solid #F4F4F4;"></video><br>
+    <canvas id="overlay" width="640" height="480" style="position:relative; top:-487px; "></canvas><br>
+
+  </div>
+  <!-- overlay canvas -->
+
+
+  <div class="overlay-canvas">
+    <div class="left-canvas">
+      <a href="#"><i class="fas fa-microphone"></i></a>
+
+    </div>
+    <div class="right-canvas">
+      <a href="#"><i class="fas fa-microphone"></i></a>
+      <a href="#"><i class="fas fa-desktop"></i></a>
+
+
+    </div>
+    <div class="bttm">
+      <p>2:03</p>
+    </div>
+  </div>
+  <div class="end">
+    <a href="#"><i class="fas fa-2x fa-genderless"></i></a>
+  </div>
+
+  <div class="reading-face">
+    <svg class="svg-area" width="350px" height="350px" viewBox="0 0 400 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <g transform="translate(200,200)">
+        <circle id="core" cx="0" cy="0" r="6"></circle>
+        <circle id="radar" cx="0" cy="0" r="6"></circle>
+      </g>
+    </svg>
+  </div>
+
+
+  <!-- ============WEBCAM ================-->
+
+  <div class="watch">
+
+    <div class="watch-text">
+      <a href="#"><i class="fab fa-2x fa-500px"></i></a>
+      <p>connect</p>
+      <p id="watch">Click here ></p>
+
+      <h5>Your smart device or fittness watch</h5>
+    </div>
+    <!-- <p>clicl here ></p> -->
+
+  </div>
+
+
+  <div class="beats">
+    <div class="top">
+      <p>Synning data</p>
+    </div>
+    <div class="heart-beat">
+      <a href="#"><i class="fas fa-heart"></i></a>
+      <p>Heart rate</p>
+      <div class="">
+        <h5>..</h5>
+        <h6>bpm</h6>
+      </div>
+    </div>
+    <div class="Bodytemp">
+      <a href="#"><i class="fas  fa-temperature-low"></i></a>
+      <p>Body temp</p>
+      <div class="">
+        <h5>..</h5>
+        <h6> Frenheit</h6>
+      </div>
+    </div>
+    <div class="blood">
+      <a href="#"><i class="fas  fa-tint"></i></a>
+      <p>Blood oxygen</p>
+      <div class="">
+        <h5>..</h5>
+        <h6>%</h6>
+      </div>
+    </div>
+    <div class="respiration">
+      <a href="#"><i class="fas  fa-lungs"></i></a>
+      <p>Respiration</p>
+      <div class="">
+        <h5>..</h5>
+        <h6>b/min</h6>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- hear rate -->
+
+  <div class="r-1">
+    <div class="heart-rate">
+      <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="150px" height="73px" viewBox="0 0 150 73" enable-background="new 0 0 150 73" xml:space="preserve">
+        <polyline fill="none" stroke="#fb3640" stroke-width="3" stroke-miterlimit="10"
+          points="0,45.486 38.514,45.486 44.595,33.324 50.676,45.486 57.771,45.486 62.838,55.622 71.959,9 80.067,63.729 84.122,45.486 97.297,45.486 103.379,40.419 110.473,45.486 150,45.486" />
+      </svg>
+      <div class="fade-in"></div>
+      <div class="fade-out"></div>
+    </div>
+
+  </div>
+
+  <!-- hear rate -->
+
+
+
+
+
+  <!-- ==============end section --------->
+
+  <div class="end-section">
+
+
+    <div class="eye">
+      <a href="#"><i class="fab fa-2x fa-slack"></i></a>
+      <p>Eye</p>
+      <p id="eye">Click here ></p>
+
+      <h5>Scan your eye </h5>
+
+
+    </div>
+
+    <div class="gender">
+      <a href="#"><i class="fas fa-user-alt"></i></a>
+      <p>Gender</p>
+      <img class="opacity" src="./images/boy.svg" alt="">
+      <h5 class="opacity">Male</h5>
+    </div>
+
+    <div class="age">
+      <a href="#"><i class="fas fa-calendar-week"></i></a>
+      <p>Age detected</p>
+      <img class="opacity" src="./images/20.svg" alt="">
+      <h5 class="opacity">Years</h5>
+
+    </div>
+    <div class="emotion">
+      <a href="#"><i class="fas fa-smile-beam"></i></a>
+      <p>Emotion</p>
+      <img src="./images/happy.svg" alt="">
+      <h5>Neutral</h5>
+
+    </div>
+    <div class="time">
+      <a href="#"><i class="fas fa-clock"></i></a>
+      <p>Screen Time</p>
+      <h1>0</h1>
+      <h5>Seconds</h5>
+
+    </div>
+
+
+    <!-- graph section -->
+    <div class="eye-data-anilysis">
+      <a href="#"><i class="far fa-3x fa-eye"></i></a>
+      <h1>Eye data <br> </h1>
+      <p>Eye data anilysis is important <br> for our ML model prediction</p>
+
+
+
+    </div>
+    <div class="info">
+      <p>Conjunctivitis
+      </p>
+      <h4 id="not1">not evaluated</h4>
+      <hr>
+      <p>Hyperemia
+      </p>
+      <h4 id="not2">not evaluated</h4>
+      <hr>
+      <p>Chemosis
+      </p>
+      <h4 id="not3">not evaluated</h4>
+      <hr>
+      <p>Epiphora
+      </p>
+      <h4 id="not4">not evaluated</h4>
+      <hr>
+
+
+    </div>
+    <div class="graph">
+      <h3>Averaging the values - </h3>
+      <p>Heart rate, Body temp, Blood oxygen, Respiration</p>
+
+      <div ng-app="chartApp" ng-controller="ChartController">
+        <threshold-chart chart-data="data"></threshold-chart>
+      </div>
+    </div>
+
+
+
+    <div class="question-section">
+
+      <div class="questions">
+        <div class="ask">
+          <a href="#"><i class="fas fa-2x fa-question"></i></a>
+          <p>Questions</p>
+        </div>
+        <hr>
+
+        <div class="question-here">
+          <p class="active" id="p1">1. Did you came in contact with any covid patient?</p>
+          <p id="p2">2. Did visited any crowd place like parties or marriage function?</p>
+          <p id="p3">3. Do your wear N-95 mask while visiting outdoors?</p>
+          <p>4. Did went for any long distance travel or just arrived from any?</p>
+          <p>5. Did any family members of yours came in contact with covid patients?</p>
+          <p>4. Did went for any long distance travel or just arrived from any?</p>
+
+
+        </div>
+      </div>
+      <div class="answers">
+
+        <div class="answer">
+          <a href="#"><i class="far fa-2x fa-comment"></i></a>
+          <p>Answers</p>
+        </div>
+        <hr>
+        <div class="answer-here">
+          <textarea id="textarea" name="name" rows="12" cols="80" maxcols="80" placeholder="Use your microphone to answer these questions"></textarea>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <div class="eye-frame none" id="eye-frame">
+    <img id="eye1" src="./images/eye.png" alt="">
+    <img id="eye2" src="./images/eye.png" alt="">
+  </div>
+
+
+  <div class="bar-code none">
+    <img id="barcode" src="./images/barcode2.png" alt="">
+  </div>
+
+  <div class="backscreen">
+
+  </div>
+
+  <!-- results -->
+
+  <div class="results">
+    <div class="top-result">
+      <h1>R.</h1>
+      <h2> Covid- 19 Report</h2>
+
+      <p>Showing date for: </p>
+      <a href="#"><i class="fas fa-calendar-alt"></i></a>
+      <p>15 Sep 2021</p>
+      <hr>
+    </div>
+
+    <div class="health-data">
+      <div class="heart-beat">
+        <a href="#"><i class="fas fa-heart"></i></a>
+        <p>Heart rate</p>
+        <div class="">
+          <h5>79</h5>
+          <h6>bpm</h6>
+        </div>
+      </div>
+      <div class="Bodytemp">
+        <a href="#"><i class="fas  fa-temperature-low"></i></a>
+        <p>Body temp</p>
+        <div class="">
+          <h5>95</h5>
+          <h6> Frenheit</h6>
+        </div>
+      </div>
+      <div class="blood">
+        <a href="#"><i class="fas  fa-tint"></i></a>
+        <p>Blood oxygen</p>
+        <div class="">
+          <h5>96</h5>
+          <h6>%</h6>
+        </div>
+      </div>
+      <div class="respiration">
+        <a href="#"><i class="fas  fa-lungs"></i></a>
+        <p>Respiration</p>
+        <div class="">
+          <h5>17</h5>
+          <h6>b/min</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="covid-possibility">
+      <div class="covid-left">
+        <h2>Covid Health</h2>
+
+        <figure class="chart-three animate">
+          <svg role="img" xmlns="http://www.w3.org/2000/svg">
+            <title>[title here]</title>
+            <desc>[long description here]</desc>
+            <circle class="circle-background" />
+            <circle class="circle-foreground" />
+          </svg>
+          <figcaption>75% of all males like donuts.</figcaption>
+        </figure>
+
+        <p> <b>You have 75% health against<br> sars covid-19 </b> </p>
+      </div>
+
+      <div class="covid-right">
+        <p>Our system analysed your data through the machine learning model trained with
+          <b>99%</b> accuracy
+        </p>
+        <div class="covid-right-info">
+          <p>Pulse Rate</p>
+          <h5>79</h5>
+          <hr>
+          <p>Body temp</p>
+          <h5>95</h5>
+          <hr>
+          <p>Blood </p>
+          <h5>95</h5>
+          <hr>
+          <p>Blood oxygen</p>
+          <h5>96</h5>
+          <hr>
+          <p>Age</p>
+          <h5>20</h5>
+          <hr>
+          <p>Gender</p>
+          <h5>
+            Male
+          </h5>
+          <p id="model-about">The model is trained with <b>1600</b> rows of data acquired from authentic sources</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="eye-results">
+      <img src="./images/eye-data.png" alt="">
+      <img id="info-img" src="./images/info.png" alt="">
+
+    </div>
+
+    <div class="insights">
+      <!-- chart -->
+      <div class="insight-1">
+        <div class="container">
+          <div class="percent-circle pc1" data-percent="22">
+            <svg>
+              <use class="percent-circle-inner" xlink:href="#percent-circle-svg"></use>
+            </svg>
+          </div>
+        </div>
+        <!-- hidden svg that we refer to-->
+        <svg class="hidden">
+          <circle id="percent-circle-svg" cx="50%" cy="50%" r="50%" stroke-alignment="inner"></circle>
+        </svg>
+        <!-- chart -->
+
+      </div>
+
+    </div>
+
+
+    <div class="overall-results-s">
+      <h2>Oveall Result:</h2>
+      <p>You have 22% chances of having sars covid-19</p>
+    </div>
+
+    <div class="report-submission">
+      <img src="./images/consult.png" alt="">
+      <img src="./images/download.png" alt="">
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <style media="screen">
+    .backscreen {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      background-color: black;
+      top: 0;
+      left: 0;
+      z-index: 100;
+      opacity: 0.3;
+    }
+
+    .bar-code {
+      position: fixed;
+      top: 120px;
+      left: 340px;
+      transition: 0.4s;
+      z-index: 500;
+    }
+
+    .eye-frame {
+      position: fixed;
+      top: 120px;
+      left: 90px;
+      transition: 0.4s;
+    }
+
+    .eye-frame img {
+      display: inline-block;
+      width: 36%;
+
+    }
+
+    #eye1 {
+      position: relative;
+      left: 60px;
+    }
+
+    .fade {
+      opacity: 0;
+    }
+  </style>
+
+  <script type="text/javascript">
+    (function() {
+      function drawCharts() {
+        var circles = document.querySelectorAll('.percent-circle');
+        circles.forEach(function(el) {
+          var percent = el.dataset.percent / 100;
+          var diameter = el.offsetWidth;
+          var circumference = Math.ceil(diameter * Math.PI);
+          var stroke = Math.ceil(circumference * percent);
+          var diff = circumference - stroke;
+          //now add the strok dash array for the first two values
+          //TODO : could this all be done with css?
+          el.querySelector('.percent-circle-inner').style.strokeDasharray = stroke + 'px ' + diff + 'px';
+        });
+      }
+
+      document.addEventListener('DOMContentLoaded', drawCharts);
+    })();
+  </script>
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./Notiflix-2.7.0/dist/notiflix-aio-2.7.0.min.js"></script>
+  <!-- <script src="https://www.rocksetta.com/tensorflowjs/saved-models/face-api-js/face-api.js"></script> -->
+  <script src="./js/index.js" charset="utf-8"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js" charset="utf-8"></script>
+  <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <script src="./js/detection.js" charset="utf-8"></script>
+  <script src="./js/main.js" charset="utf-8"></script>
+
+</body>
+
+</html>

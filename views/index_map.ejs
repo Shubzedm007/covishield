@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
+
+<!-- fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/index_.css">
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css' rel='stylesheet' />
+
+<body>
+  <!--==================== left bar================ -->
+
+
+
+  <!--================== left bar end ===============-->
+
+
+  <div id='map' style='width: 950px; height: 820px;'></div>
+
+  <!-- =====================right bar================= -->
+  <div class="right-bar">
+
+    <h2>Doctors Available</h2>
+    <div class="image-box">
+
+      <!-- <img src="images/studentt.png" alt=""> -->
+      <!-- <img id="profile" src="images/doctor.png" alt=""> -->
+    </div>
+
+    <div class="buttons">
+      <div id="btn-1" class="btn-1">
+        Previous
+      </div>
+      <div class="btn-2">
+        Next
+      </div>
+    </div>
+
+    <div id="info" class="info">
+      <a href="#"><i class="fas fa-user-check"></i>verified</a>
+      <div class="head">
+        <div class="head-head">
+
+
+          <p class="head-1">Santosh kumer</p>
+          <p id="place" class="head-1">MBBs,MD</p>
+        </div>
+        <p id="price" class="head-1 display">$40</p>
+        <p id="price-dec" class="head-2 display">per hour</p>
+
+
+      </div>
+
+
+      <div class="mid">
+        <div class="mid-top">
+
+
+          <a href="#"><i class="fas fa-user-friends"></i> 2 years experience</a>
+          <a href="#"><i class="fas fa-child"></i></i>child specilist</a>
+
+        </div>
+
+        <div class="mid-bottom">
+
+
+          <a href="#"><i class="fas fa-eye"></i></i>Eyes</a>
+          <a href="#"><i class="fas fa-notes-medical"></i></i>Cardiologist</a>
+
+        </div>
+      </div>
+
+
+      <div class="bottom">
+        <div class="bottom-top">
+          <a href="#"><i class="fas fa-2x fa-university"></i></a>
+          <p class="bottom-1 display">Distance from you :</p>
+          <p id="campus" class="bottom-2 display"> 500m (5 min metro)</p>
+        </div>
+        <div class="ratings">
+
+          <a href="#" id="star-1" class="light"><i class="fas fa-2x fa-star"></i></a>
+          <a href="#" id="star-2" class="light"><i class="fas fa-2x fa-star"></i></a>
+          <a href="#" id="star-3" class="light"><i class="fas fa-2x fa-star"></i></a>
+          <a href="#" id="star-4" class="light"><i class="fas fa-2x fa-star"></i></a>
+          <a href="#" id="star-5" class="light"><i class="fas fa-2x fa-star"></i></a>
+
+        </div>
+        <form class="not" action="/v" method="post">
+          <input id="input" type="text" name="vr" value="">
+          <button id="vr" type="submit" name="button"></button>
+        </form>
+
+
+        <div class="btn-group">
+          <div class="btn-group-1">
+            <p>Go back</p>
+          </div>
+          <div class="btn-group-2">
+            <p>Confirm</p>
+          </div>
+        </div>
+        <hr>
+      </div>
+    </div>
+  </div>
+  <!-- =====================right bar================= -->
+
+  <div id="card" class="card card-1 ">
+
+    <div id="card-body" class="card-body opacity">
+      <a href="#" id="card-body-pre"><i class="fas fa-2x fa-chevron-left"></i></a>
+      <a href="#" id="card-body-next"><i class="fas fa-2x fa-chevron-right"></i></a>
+
+
+      <img id="card_img" src="images/hotel.jpg" alt="">
+      <h1 id="name-in-card">Caroll Garden</h1>
+    </div>
+    <a href="#" id="card-main-btn"><i class="fas fa-3x fa-arrow-circle-down"></i></a>
+  </div>
+
+
+
+
+
+
+
+
+
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js'></script>
+  <script type="text/javascript">
+    var img = ["images/vr1.jpeg", "images/vr2.jpeg", "images/vr3.jpeg", "images/vr5.jpeg", "images/vr6.jpeg"];
+    var a = 1;
+
+    function v() {
+      document.querySelector(".btn-group-1").addEventListener("click", function() {
+        document.querySelector("#vr").click();
+
+      })
+    }
+
+    function c() {
+      document.querySelector(".btn-group-2").addEventListener("click", function() {
+        swal({
+          title: "Order confirmed!",
+          text: "Check your mail for further information",
+          icon: "success",
+          button: "Aww yiss!",
+        });
+
+      })
+    }
+
+    function img_card() {
+
+      document.querySelector("#card-body-next").addEventListener("click", function() {
+        document.querySelector("#card_img").setAttribute("src", img[a]);
+        a++;
+        if (a == 4) {
+          a = 0;
+        }
+      })
+
+    }
+
+    img_card();
+
+    function card() {
+      document.querySelector("#card-main-btn").addEventListener("click", function() {
+        document.querySelector("#card-body").classList.remove("opacity")
+
+      })
+    }
+
+    function pointer_toggle() {
+      document.querySelector("#map").addEventListener("click", function() {
+        document.querySelector("#card").classList.toggle("opacity");
+
+      })
+    }
+
+    var temp = 0;
+    var temp2 = 0;
+
+    function next3rd() {
+      document.querySelector("#info").classList.add("opacity");
+      document.querySelector("#card").classList.add("opacity");
+      document.querySelector("#card-body").classList.add("opacity")
+      document.querySelector("#name-in-card").innerHTML = "MBBs, MD";
+      document.querySelector(".head-1").innerHTML = "Sewel jhonson";
+
+
+      document.querySelector("#input").value = "3";
+
+
+      setTimeout(function() {
+        document.querySelector("#info").classList.remove("opacity");
+      }, 600);
+
+
+      setTimeout(function() {
+        document.querySelector("#card").classList.remove("opacity");
+      }, 1200);
+
+      map.flyTo({
+        center: [
+          -74.0069,
+          40.7256
+        ],
+        essential: true // this animation is considered essential with respect to prefers-reduced-motion
+      });
+
+      // document.querySelector("#profile").setAttribute("src", "images/student3.png")
+      document.querySelector("#price").innerHTML = "$99";
+      document.querySelector("#price-dec").innerHTML = "per hour";
+      document.querySelector("#place").innerHTML = "MBBs ,MS";
+      document.querySelector("#campus").innerHTML = "1200m (no metro)";
+      document.querySelector("#star-1").setAttribute("class", "light")
+      document.querySelector("#star-2").setAttribute("class", "light")
+      document.querySelector("#star-5").setAttribute("class", "")
+      document.querySelector("#star-4").setAttribute("class", "")
+      document.querySelector("#star-3").setAttribute("class", "")
+
+
+
+      temp = 0;
+      temp2 = 1;
+    }
+
+    function next2nd() {
+
+      document.querySelector("#info").classList.add("opacity");
+      document.querySelector("#card").classList.add("opacity");
+      document.querySelector("#card-body").classList.add("opacity")
+      document.querySelector("#name-in-card").innerHTML = "MS,MD";
+      document.querySelector("#input").value = "2";
+      document.querySelector(".head-1").innerHTML = "Raki sawant";
+
+
+      setTimeout(function() {
+        document.querySelector("#info").classList.remove("opacity");
+      }, 400);
+
+      setTimeout(function() {
+        document.querySelector("#card").classList.remove("opacity");
+      }, 1200);
+
+      map.flyTo({
+        center: [
+          -74.0061,
+          40.7128
+        ],
+        essential: true // this animation is considered essential with respect to prefers-reduced-motion
+      });
+
+      // document.querySelector("#profile").setAttribute("src", "images/doctor2.png")
+      document.querySelector("#price").innerHTML = "$95";
+      document.querySelector("#price-dec").innerHTML = "per hour ";
+      document.querySelector("#place").innerHTML = "MBBs,MD";
+      document.querySelector("#campus").innerHTML = "800m (9 min metro)";
+      document.querySelector("#star-1").setAttribute("class", "light")
+      document.querySelector("#star-2").setAttribute("class", "light")
+      document.querySelector("#star-5").setAttribute("class", "")
+      document.querySelector("#star-4").setAttribute("class", "")
+      document.querySelector("#star-3").setAttribute("class", "light")
+      temp = 1;
+      temp2 = 0;
+
+
+    }
+
+    function next() {
+      document.querySelector(".btn-2").addEventListener("click", function() {
+
+        if (temp) {
+          next3rd();
+        } else {
+          next2nd();
+        }
+
+      })
+    }
+
+
+    function Previous() {
+      document.querySelector(".btn-1").addEventListener("click", function() {
+
+        if (temp2) {
+          next2nd();
+        } else {
+          temp = 0;
+          temp2 = 0;
+          document.querySelector("#info").classList.add("opacity");
+          document.querySelector("#card").classList.add("opacity");
+          document.querySelector("#card-body").classList.add("opacity");
+          document.querySelector("#name-in-card").innerHTML = "MBBs, MD";
+          document.querySelector("#input").value = "1";
+
+
+          setTimeout(function() {
+            document.querySelector("#info").classList.remove("opacity");
+          }, 400);
+
+          setTimeout(function() {
+            document.querySelector("#card").classList.remove("opacity");
+          }, 1200);
+
+          map.flyTo({
+            center: [
+              -74.011373,
+              40.703372
+            ],
+            essential: true // this animation is considered essential with respect to prefers-reduced-motion
+          });
+
+          // document.querySelector("#profile").setAttribute("src", "images/doctor.png")
+          document.querySelector("#price").innerHTML = "$40";
+          document.querySelector("#price-dec").innerHTML = "per hour";
+          document.querySelector("#place").innerHTML = "MBBs,MD";
+          document.querySelector("#campus").innerHTML = "500m (5 min metro)";
+          document.querySelector("#star-1").setAttribute("class", "light")
+          document.querySelector("#star-2").setAttribute("class", "light")
+          document.querySelector("#star-5").setAttribute("class", "light")
+          document.querySelector("#star-4").setAttribute("class", "light")
+          document.querySelector("#star-3").setAttribute("class", "light")
+        }
+      })
+    }
+    Previous();
+    next();
+    card();
+    v();
+    pointer_toggle()
+    c();
+
+
+
+
+    var coord1 = [-74.011373, 40.703372];
+    var coord2 = [-74.013382, 40.712742];
+
+
+    mapboxgl.accessToken = 'pk.eyJ1IjoicmVoYW42OTMiLCJhIjoiY2ttcDdobDM3MHlzazJ1cGV0NXJ6aGJxbyJ9.GpNcml4Mo43mggLRJfP6WA';
+    var map = new mapboxgl.Map({
+      container: 'map', // container ID
+      style: 'mapbox://styles/rehan693/ckmw8rgr619e117ntivjr2jyu', // style URL
+      center: coord1, // starting position [lng, lat]
+      zoom: 16,
+      pitch: 60, // starting zoom
+    });
+  </script>
+</body>
+
+</html>
